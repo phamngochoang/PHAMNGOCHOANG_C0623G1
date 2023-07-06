@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input id="input_1" type="text" name="text1" value="">
+        <input id="input_2" type="text" name="text1" value="">
+        <br>
+        <button type="button" onclick="phepcong()">Cộng (+)</button>
+        <button type="button" onclick="pheptru()">Trừ (-)</button>
+        <button type="button" onclick="phepnhan()">Nhân (X)</button>
+        <button type="button" onclick="phepchia()">Chia (/)</button>
+    </form>
+    <br>
+    <p id="result"></p>
+    <script>
+        function phepcong() {
+            var a = parseInt(document.getElementById("input_1").value);
+            var b = parseInt(document.getElementById("input_2").value);
+
+            var tong = a + b;
+            document.getElementById("result").innerHTML ="Result Division: " + tong;
+        }
+        function pheptru() {
+            var a = parseInt(document.getElementById("input_1").value);
+            var b = parseInt(document.getElementById("input_2").value);
+
+            var tru = a - b;
+            document.getElementById("result").innerHTML ="Result Division: " + tru;
+        }
+        function phepnhan() {
+            var a = parseInt(document.getElementById("input_1").value);
+            var b = parseInt(document.getElementById("input_2").value);
+
+            var nhan = a * b;
+            document.getElementById("result").innerHTML ="Result Division: " + nhan;
+        }
+        function phepchia() {
+            var a = parseInt(document.getElementById("input_1").value);
+            var b = parseInt(document.getElementById("input_2").value);
+
+            var chia = a / b;
+            document.getElementById("result").innerHTML ="Result Division: " + chia;
+        }
+    </script>
+</body>
+</html>
