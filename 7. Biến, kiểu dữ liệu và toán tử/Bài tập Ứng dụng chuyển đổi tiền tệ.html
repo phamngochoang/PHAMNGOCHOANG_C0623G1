@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency	</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input id="id_Amount" type="text" name="Amount" value=""></td>
+            <td>
+                <select id="select_1">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="select_2">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td><button onclick="clickConvert()">Convert</button></td>
+        </tr>
+    </table>
+    <p id="Result"></p>
+    <script>      
+        function clickConvert() {    
+            var valueAmount = document.getElementById("id_Amount").value;
+            var select1 = document.getElementById("select_1").value;
+            var select2 = document.getElementById("select_2").value;  
+                 
+            if (select1 == 'VND' && select2 == 'USD') {
+                var VNDsangUSD = valueAmount / 23500;
+                document.getElementById("Result").innerHTML ='Result: '+ VNDsangUSD +'USD';
+            }else if(select1 == 'USD' && select2 == 'VND'){
+                var USDsangVND = valueAmount * 23500;
+                document.getElementById("Result").innerHTML ='Result: '+ USDsangVND + 'VND';
+            } else if(select1 == 'USD' && select2 == 'USD') {
+                document.getElementById("Result").innerHTML ='Result: '+ valueAmount + 'USD';
+            }else {
+                document.getElementById("Result").innerHTML ='Result: '+ valueAmount + 'VND';
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
