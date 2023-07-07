@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 700px;
+            height: 300px;
+        }
+        table button {
+            width: 100%;
+            height: 100%;
+        }
+        #batdau {
+            background-color: rgb(104, 104, 238);
+        }
+        #batdau:hover {
+            background-color: rgb(17, 17, 242);
+        }
+        p {
+            border: 3px solid black;
+            text-align:right;
+            width: 100%;
+            height: 50%;
+            font-size: 30px;
+        }
+    </style>
+    <form>
+        <table>
+            <tr>
+                <th colspan="7"><p id="id_bangtinh"></p></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="">Rad</button></th>
+                <th><button type="button" onclick="">Deg</button></th>
+                <th><button type="button" onclick="">x!</button></th>
+                <th><button type="button" onclick="">(</button></th>
+                <th><button type="button" onclick="">)</button></th>
+                <th><button type="button" onclick="">%</button></th>
+                <th><button type="button" onclick="">AC</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="">Inv</button></th>
+                <th><button type="button" onclick="">sin</button></th>
+                <th><button type="button" onclick="">In</button></th>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="7">7</button></td>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="8">8</button></td>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="9">9</button></td>
+                <th><button type="button" onclick="">÷</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="">π</button></th>
+                <th><button type="button" onclick="">cos</button></th>
+                <th><button type="button" onclick="">log</button></th>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="4">4</button></td>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="5">5</button></td>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="6">6</button></td>
+                <th><button type="button" onclick="">X</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="">e</button></th>
+                <th><button type="button" onclick="">tan</button></th>
+                <th><button type="button" onclick="">√ </button></th>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="1">1</button></td>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="2">2</button></td>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="3">3</button></td>
+                <th><button type="button" onclick="">-</button></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="">Ans</button></th>
+                <th><button type="button" onclick="">EXP</button></th>
+                <th><button type="button" onclick="">x<sup>y</sup></button></th>
+                <td><button id="id_layso" type="button" onclick="hienso()" value="0">0</button></td>
+                <td><button type="button" onclick="">.</button></td>
+                <td><button type="button" onclick="" id="batdau">=</button></td>
+                <th><button type="button" onclick="">+</button></th>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function hienso() {
+            var layso = document.getElementById("id_layso").value;
+            document.getElementById("id_bangtinh").innerHTML = layso;
+        }
+    </script>
+</body>
+</html>
