@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="idtext">
+    <table>
+        <tr>
+            <td><button type="button" onclick="onNumber(1);">1</button></td>
+            <td><button type="button" onclick="onNumber(2);">2</button></td>
+            <td><button type="button" onclick="onNumber(3);">3</button></td>
+            <td><button type="button" onclick="onNumber('+');">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="onNumber(4);">4</button></td>
+            <td><button type="button" onclick="onNumber(5);">5</button></td>
+            <td><button type="button" onclick="onNumber(6);">6</button></td>
+            <td><button type="button" onclick="onNumber('-');">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="onNumber(7);">7</button></td>
+            <td><button type="button" onclick="onNumber(8);">8</button></td>
+            <td><button type="button" onclick="onNumber(9);">9</button></td>
+            <td><button type="button" onclick="onNumber('*');">x</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="onNumber();">C</button></td>
+            <td><button type="button" onclick="onNumber(0);">0</button></td>
+            <td><button type="button" onclick="onKetqua('=');">=</button></td>
+            <td><button type="button" onclick="onNumber('/');">/</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function onNumber(number){
+            document.getElementById('idtext').value += number;
+        }
+        function onKetqua(ketqua){
+            if(ketqua == '='){
+             document.getElementById('idtext').value = eval(document.getElementById('idtext').value);
+            }
+        }
+    </script>
+</body>
+</html>
