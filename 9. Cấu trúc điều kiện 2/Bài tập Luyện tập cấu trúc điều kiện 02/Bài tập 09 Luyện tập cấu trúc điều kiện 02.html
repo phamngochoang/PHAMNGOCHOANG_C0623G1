@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt('Nhập số a:');
+        let b = prompt('Nhập số b:');
+        let c = prompt('Nhập số c:');
+        if(a > 0 && b > 0 && c > 0 && (a + b > c) && (b + c > a) && (a + c > b)){
+            document.write('Ba cạnh a,b,c là Cạnh của tam giác vuông');
+        }else{
+            document.write('Ba cạnh a,b,c là không phải cạnh của tam giác vuông')
+        }
+    </script>
+</body>
+</html>

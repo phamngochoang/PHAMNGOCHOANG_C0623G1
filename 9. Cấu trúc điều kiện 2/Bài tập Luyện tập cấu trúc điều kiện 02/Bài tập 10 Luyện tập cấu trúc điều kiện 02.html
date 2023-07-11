@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kwh = prompt('Nhập số kWh');
+        
+        if(kwh > 0 && kwh <= 100){
+            let dongia1 = kwh*1.864;
+            document.write('Bạn sử dụng' + kwh +'Kwh' + 'Vật giá điện của bạn là' + dongia1+ 'Ngàn đồng');
+        }else {
+            if(kwh > 101 && kwh <= 200){
+            let dongia1 = kwh*2.360;
+            document.write('Bạn sử dụng' + kwh +'Kwh' + 'Vật giá điện của bạn là' + dongia1+ 'Ngàn đồng');
+        }else{
+            if(kwh > 201 && kwh <= 300){
+            let dongia1 = kwh*2612;
+            document.write('Bạn sử dụng' + kwh +'Kwh' + 'Vật giá điện của bạn là' + dongia1+ 'Ngàn đồng');
+        }else{
+            if(kwh > 301 && kwh <= 400){
+            let dongia1 = kwh*2701;
+            document.write('Bạn sử dụng' + kwh +'Kwh' + 'Vật giá điện của bạn là' + dongia1+ 'Ngàn đồng');
+        }else{
+            if(kwh > 401){
+            let dongia1 = kwh*2927;
+            document.write('Bạn sử dụng' + kwh +'Kwh' + 'Vật giá điện của bạn là' + dongia1+ 'Ngàn đồng');
+        }
+        }
+        }
+        }
+        }
+
+    </script>
+</body>
+</html>

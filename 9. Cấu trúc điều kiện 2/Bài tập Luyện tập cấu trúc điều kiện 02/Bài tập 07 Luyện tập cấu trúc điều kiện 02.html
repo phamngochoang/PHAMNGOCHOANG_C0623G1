@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt('Nhập a :');
+        let b = prompt('Nhập b :');
+        let c = prompt('Nhập c :');
+
+        if(a != 0){
+            let delta = b*b - 4*a*c;
+            if(delta > 0){
+                let xnghiem1 = (-b + Math.sqrt(delta))/a*a;
+                let xnghiem2 = (-b - Math.sqrt(delta))/a*a;
+                document.write('Phương trình có 2 nghiệm phân biệt là x1 ='+ xnghiem1 +'và x2 = '+xnghiem2);
+            }else {
+                if(delta == 0){
+                    let nghiemkep = -b/a*a;
+                    document.write('Phương trình có nghiệm kép x1 = x2 = '+ nghiemkep);
+                }else {
+                    if(delta < 0){
+                        document.write('Phương trình vô nghiệm');
+                    }
+                }
+            }
+        }else {
+            if(a == 0){
+                if(b != 0){
+                let x = -c/b;
+                    document.write("Phương trình có 1 nghiệm là X = "+ x );
+                }else{
+                    document.write("Không phải là phương trình bậc 1 " )
+                }
+            }
+        }
+    </script>
+</body>
+</html>

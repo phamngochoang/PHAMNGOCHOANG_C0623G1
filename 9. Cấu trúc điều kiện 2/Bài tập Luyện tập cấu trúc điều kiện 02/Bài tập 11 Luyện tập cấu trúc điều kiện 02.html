@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thuanhap = prompt('Thua nhập cá nhân');
+        if(thuanhap > 0 && thuanhap <= 60000000){
+            let ThueTNCN = thuanhap*0.05;
+            document.write('Thuế TNCN là : ' + ThueTNCN);
+        } else {
+            if(thuanhap > 60000000 && thuanhap <= 120000000){
+                let ThueTNCN = thuanhap*0.1;
+                document.write('Thuế TNCN là : ' + ThueTNCN);
+            }else {
+                if(thuanhap > 0 && thuanhap <= 60000000){
+                    let ThueTNCN = thuanhap*0.15;
+                    document.write('Thuế TNCN là : ' + ThueTNCN);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

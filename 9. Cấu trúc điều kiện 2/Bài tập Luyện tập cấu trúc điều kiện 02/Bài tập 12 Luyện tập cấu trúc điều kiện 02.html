@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sotienvay = prompt('Số Tiền vay là (VND)');
+        let thangvay = prompt('Số Tháng vay là');
+        let laixuat = prompt('Số lãi xuất ngân hàng là (%)');
+        let sotiennhanduoc = sotienvay*(1 +laixuat/12)^thangvay;
+        let sotienlai = sotiennhanduoc -sotienvay;
+
+        document.write(sotienlai);
+    </script>
+</body>
+</html>
