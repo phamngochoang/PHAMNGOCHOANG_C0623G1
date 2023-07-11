@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt('Điểm bài kiểm tra :')) ;
+        let b = parseFloat(prompt('Điểm thi giữa kỳ :'));
+        let c = parseFloat(prompt('Điểm thi Cuối kỳ :')) ;
+        let DTB = parseFloat((a+b+c)/3);
+
+        if (DTB >= 8){
+            alert('Điểm trung Bình là '+ DTB +'Học lực của học sinh là Giỏi ')
+        }else {
+            if(DTB < 8 && DTB >= 6.5){
+                alert('Điểm trung Bình là '+ DTB +'Học lực của học sinh là Khá ')
+            }else {
+                if(DTB < 6.5 && DTB >= 4.5){
+                    alert('Điểm trung Bình là '+ DTB +'Học lực của học sinh là Trung bình ')      
+                }else{
+                    if(DTB < 4.5){
+                        alert('Điểm trung Bình là '+ DTB +'Học lực của học sinh là Yêú ')
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
