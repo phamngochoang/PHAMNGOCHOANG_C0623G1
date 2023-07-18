@@ -70,20 +70,20 @@
         // console.log(c);
 
         // //Bài 6: tính tổng các số nguyên tố trong mảng
-        // let arr = [3,1,5,3,4,5,2,7];
-        // function tongsonguyento(number){
-        //     let tong = 0;
-        //     for(let i =0;i <number.length;i++){
-        //         for(let j = 1;j <= number[i] ;j++){
-        //             if(number[i] %j ==0){
-        //                 tong +=number[i];
-        //             }
-        //         }
-        //     }
-        //     return tong;
-        // }       
+        let arr = [3,1,5,3,4,5,2,7];
+        function tongsonguyento(number){
+            let tong = 0;
+            for(let i =0;i <number.length;i++){
+                for(let j = 1;j <= number[i] ;j++){
+                    if(number[i] %j ==0){
+                        tong +=number[i];
+                    }
+                }
+            }
+            return tong;
+        }       
 
-        // console.log(tongsonguyento(arr));
+        console.log(tongsonguyento(arr));
 
         
         
