@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <input type="text" name="" id="nhaptu">
+        <button onclick="dich()">Dịch</button>
+        <p id="result"></p>
+    </table>
+    <script>
+        function dich(){
+            let tienganh = ['red','blue','balck','orange'];
+            let tiengviet = ['Màu Đỏ','Màu Xanh biển','Màu đen','Màu cam'];
+            let values = document.getElementById('nhaptu').value;
+            let result = '';
+
+            for(let i =0;i<tienganh.length;i++){
+                let index = 0;
+                if(values == tienganh[i]){
+                    index = i;
+                    for(let j=0; j< tiengviet.length;j++){
+                        if(index == j){
+                            result += tiengviet[j];
+                        }
+                    }
+                }
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
